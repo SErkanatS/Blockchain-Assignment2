@@ -35,15 +35,12 @@ export default function Home() {
       toast.success("Game has been played")
       const data = log[0]
       const { gameId, loser, reward, winner } = data.args
-      const ethr = BigInt(reward) / BigInt("1000000000000000000n")
-      console.log(ethr); // This will print 0.1n
-
       if (loser === address) {
-        const message = `You lost to ${winner}. Reward is ${ethr} ETH`
+        const message = `You lost to ${winner}. Reward is ${reward} wei`
         toast.warning(message)
       }
       if (winner === address) {
-        const message = `Congradulation! You win  ${ethr} ETH!!!`
+        const message = `Congradulation! You win  ${reward} wei!!!`
         toast.success(message)
       }
     },
