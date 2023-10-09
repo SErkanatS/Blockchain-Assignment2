@@ -18,6 +18,7 @@ export default function Home() {
 		abi: RockPaperScissors.abi,
 		eventName: 'ChallengeCreated',
 		listener(log) {
+      toast.success("Game has been successfully created!")
 			const data = log[0]
 			const { player1, player2, gameId, betAmount } = data.args
 			if (player2 === address) {
@@ -34,6 +35,7 @@ export default function Home() {
 		eventName: 'GameCompleted',
 		listener(log) {
       console.log(log)
+      toast.success("Game has been played")
 			const data = log[0]
 			const { gameId, loser, reward, winner } = data.args
       const ethr = BigInt(reward) / BigInt("1000000000000000000n")
