@@ -65,9 +65,6 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24 relative">
       <div className="z-10 max-w-5xl w-full items-center justify-center font-mono text-sm">
-        <p className="left-0 top-0 text-center flex justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:from-inherit static w-auto rounded-xl border bg-gray-200 p-4 dark:bg-zinc-800/30">
-          Assignment 2 <br /> by Sayranbekov Yerkanat, Pogolovkin Daniil, Grigoriyev Timur
-        </p>
         <div className='bg-[rgba(255,255,255,0.1)] rounded-2xl py-12 px-5 backdrop-blur-md'>
           <div className=' flex flex-col gap-2 '>
             <h2>Create a Challenge</h2>
